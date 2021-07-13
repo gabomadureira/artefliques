@@ -1,0 +1,109 @@
+:root{
+    --cor1:#6c0ec4;
+    --cor2:#fd6233c5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body {
+    background: var(--cor1);
+    font-family:'Times New Roman', Times, serif;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+header .logo {
+    margin-left: 10px;
+    color: var(--cor2);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fca9fc;
+    margin-right: 15px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/*filme principal*/
+
+.filme-principal {
+    font-size: 18px;
+    background: linear-gradient(rgba(246, 244, 247, 0.37),rgba(212, 143, 240, 0.37)100%), url('../img/capadofilme.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.filme-principal .sinopse {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+.botao {
+    background-color: rgba(48, 32, 58, 0.5);
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    margin-right: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+
+.botao:hover {
+    background-color: white;
+    color: black;
+
+
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+/*containers*/
+
+.container {
+    margin-left: 15px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+/*carrosel*/
+
+.box-film {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 3px;
+}
